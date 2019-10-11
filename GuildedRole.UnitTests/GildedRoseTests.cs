@@ -14,9 +14,9 @@ namespace GuildedRole.UnitTests
         {
             CombinationApprovals.VerifyAllCombinations(
                 DoQualityUpdate,
-                new[] { "foo", },
-                new[] { 0, },
-                new[] { 0, });
+                new[] { "foo", "Aged Brie", "Backstage passes to a TAFKAL80ETC concert", "Sulfuras, Hand of Ragnaros" },
+                new[] { -1, 0, 11, },
+                new[] { 0, 1, 49, 50 });
         }
 
         private static Item DoQualityUpdate(string name, int sellIn, int quality)
