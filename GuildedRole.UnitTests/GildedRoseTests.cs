@@ -9,13 +9,13 @@ namespace GuildedRole.UnitTests
     public class GildedRoseTests
     {
         [Fact]
-        [UseReporter(typeof(DiffReporter))]
+        [UseReporter(typeof(QuietReporter))]
         public void Test1()
         {
             CombinationApprovals.VerifyAllCombinations(
                 DoQualityUpdate,
                 new[] { "foo", "Aged Brie", "Backstage passes to a TAFKAL80ETC concert", "Sulfuras, Hand of Ragnaros" },
-                new[] { -1, 0, 11, },
+                new[] { -1, 0, 2, 6, 11, },
                 new[] { 0, 1, 49, 50 });
         }
 
